@@ -119,9 +119,7 @@
 }
 
 .pager .pager-pages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     gap: var(--gap-default);
 }
 

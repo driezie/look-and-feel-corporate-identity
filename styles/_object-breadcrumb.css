@@ -1,0 +1,54 @@
+.breadcrumb {
+    gap: var(--gap-default);
+    position: relative;
+    padding: 0 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family-secondary);
+}
+
+.breadcrumb a, .breadcrumb span {
+    font-size: var(--font-size-small);
+    color: var(--tertiary-color);
+}
+
+.breadcrumb span {
+    color: var(--breadcrumb-divider-color);
+}
+
+.breadcrumb a:first-child {
+    font-weight: 600;
+    color: var(--tertiary-color);
+}
+
+/* Filter buttons */
+.sort-buttons {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.sort-buttons button svg {
+    font-size: 16px;
+}
+
+.sort-buttons .filteren {
+    position: relative;
+    /* color: #333; */
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1) inset;
+    min-width: 120px;
+    width: 100%;
+    max-width: 250px;
+    -webkit-appearance: none;
+}

@@ -11,14 +11,14 @@ img {
 }
 
 body {
-    font-family: var(--font-family-default);
     background: var(--bg-background);
+    font-family: var(--font-family-default);
 }
 
 
 a {
-    text-decoration: none;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 button {

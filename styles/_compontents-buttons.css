@@ -1,8 +1,8 @@
 .btn {
     background-color: var(--bg-button);
-    border-radius: 2px;
+    border-radius: var(--default-border-radius);
     color: var(--tertiary-text-color);
-    padding: 1rem 0.5rem;
+    padding: .8rem 0.5rem;
     text-decoration: none;
     text-align: center;
     font-family: var(--font-family-tertiary);
@@ -14,7 +14,7 @@
 }
 
 .btn:hover  {
-    background-color: #de9000;
+    background-color: var(--bg-button-hover);
 }
 
 .btn svg {
