@@ -1,0 +1,40 @@
+.hidden {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-left-center {
+    align-items: left;
+    justify-content: center;
+}
+
+.flex-right-center {
+    align-items: right;
+    justify-content: center;
+}
+
+.flex-left {
+    align-items: left;
+    justify-content: left;
+}
+
+.flex-right {
+    align-items: right;
+    justify-content: right;
+}

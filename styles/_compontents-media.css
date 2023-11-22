@@ -1,0 +1,58 @@
+
+@media (min-width: 540px) {
+    .grid-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+    }
+
+    .item img.banner-img {
+        min-height: 220px;
+        object-fit: cover;
+        object-position: center;
+        padding-left: 10px;
+    }
+
+    .item .item-content {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .breadcrumb, .sort-buttons, .content {
+        margin: 0;
+    }   
+
+    .menu-item{
+        display: none;
+    }
+
+    header .menu .list-item {
+        display: flex;
+    }
+
+    header {
+        padding:0 12px;
+    }
+}
+
+@media (min-width: 700px) {
+    .sharedwith .list {
+        display: flex;
+    }
+}
+
+@media (min-width: 940px) {
+    header nav span {
+        display: block;
+    }
+
+    .footer-grid {
+        grid: 10px;
+        text-align: left !important;
+    }
+}

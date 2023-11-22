@@ -1,0 +1,23 @@
+.btn {
+    background-color: var(--bg-button);
+    border-radius: 2px;
+    color: var(--tertiary-text-color);
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-family-tertiary);
+    font-size: var(--font-size-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 127px;
+}
+
+.btn:hover  {
+    background-color: #de9000;
+}
+
+.btn svg {
+    margin-left: 5px;
+}
+

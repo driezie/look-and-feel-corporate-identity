@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funda</title>
+
+    <!-- Components -->
+    <link rel="stylesheet" href="./styles/_compontents-root.css">
+    <link rel="stylesheet" href="./styles/_compontents-globals.css">
+    <link rel="stylesheet" href="./styles/_compontents-fonts.css">
+    <link rel="stylesheet" href="./styles/_compontents-main.css">
+    <link rel="stylesheet" href="./styles/_compontents-buttons.css">
+    <link rel="stylesheet" href="./styles/_compontents-nav.css">
+    <link rel="stylesheet" href="./styles/_compontents-footer.css">
+    <link rel="stylesheet" href="./styles/_compontents-media.css">
+    <link rel="stylesheet" href="./styles/_compontents-styles.css">
+
+    <!-- Objects -->
+    <link rel="stylesheet" href="./styles/_object-grid.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <ul class="menu flex">
+                <li class="menu-item hidden">
+                    <button class="menu-button" onclick="toggleMenu()">
+                            <img src="./assets/svg/menu.svg" alt="open menu" class="icon flex">
+                    </button>
+                </li>
+                <li class="logo-item">
+                    <a href="">
+                        <img src="./assets/img/logo.png" alt="Funda logo" class="logo">
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">Kopen</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">Huren</a>
+                </li>
+                <li class="list-item">
+                    <a href="#">Verkopen</a>
+                </li>
+            </ul>
+            <nav class="flex">
+                <a href="#" title="Bewaarde huizen">
+                    <img src="./assets/svg/savedhouses.svg" alt="Saved houses icon" class="icon">
+                    
+                    <span>
+                        Bewaarde huizen
+                    </span>
+                </a>
+                <a href="#" title="My account">
+                    <img src="./assets/svg/account.svg" alt="Account icon" class="icon">
+                    <span>
+                        Jelte
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Share -->
+    <div class="share-overlay" id="share-overlay">
+        <div class="top">
+            <p>Delen</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M13.2978 12L19.7339 5.57331C19.9043 5.40295 20 5.17202 20 4.93124C20 4.69047 19.9043 4.45954 19.7339 4.28918C19.5633 4.11903 19.332 4.02346 19.0909 4.02346C18.8498 4.02346 18.6185 4.11903 18.4479 4.28918L12.0117 10.7159L5.57562 4.28918C5.49232 4.19991 5.39186 4.12831 5.28025 4.07866C5.16863 4.029 5.04814 4.00229 4.92597 4.00014C4.80379 3.99799 4.68243 4.02043 4.56913 4.06613C4.45583 4.11182 4.35291 4.17984 4.26651 4.26612C4.1801 4.35239 4.11199 4.45517 4.06622 4.5683C4.02046 4.68143 3.99799 4.80261 4.00014 4.92461C4.0023 5.0466 4.02904 5.16692 4.07877 5.27837C4.1285 5.38982 4.20021 5.49013 4.28961 5.57331L10.7257 12L4.28961 18.4267C4.20021 18.5099 4.1285 18.6102 4.07877 18.7216C4.02904 18.8331 4.0023 18.9534 4.00014 19.0754C3.99799 19.1974 4.02046 19.3186 4.06622 19.4317C4.11199 19.5448 4.1801 19.6476 4.26651 19.7339C4.35291 19.8202 4.45583 19.8882 4.56913 19.9339C4.68243 19.9796 4.80379 20.002 4.92597 19.9999C5.04814 19.9977 5.16863 19.971 5.28025 19.9213C5.39186 19.8717 5.49232 19.8001 5.57562 19.7108L12.0117 13.2841L18.4479 19.7108C18.6185 19.881 18.8498 19.9765 19.0909 19.9765C19.332 19.9765 19.5633 19.881 19.7339 19.7108C19.9043 19.5405 20 19.3095 20 19.0688C20 18.828 19.9043 18.5971 19.7339 18.4267L13.2978 12Z" fill="#999999"/>
+            </svg>
+        </div>
+        <!-- search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Zoeken op email" id="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M21 21.1399L15.0001 15.1399M17 10.1399C17 14.0059 13.866 17.1399 10 17.1399C6.13401 17.1399 3 14.0059 3 10.1399C3 6.2739 6.13401 3.13989 10 3.13989C13.866 3.13989 17 6.2739 17 10.1399Z" stroke="#006199" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </div>
+        <div class="shared-with">
+            <p>Gedeeld met</p>
+            <div class="person">
+                <div class="info">
+                    <img src="./assets/img/person.jpg" alt="user1">
+                    <p>example@hotmail.com</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M13.2978 12L19.7339 5.57331C19.9043 5.40295 20 5.17202 20 4.93124C20 4.69047 19.9043 4.45954 19.7339 4.28918C19.5633 4.11903 19.332 4.02346 19.0909 4.02346C18.8498 4.02346 18.6185 4.11903 18.4479 4.28918L12.0117 10.7159L5.57562 4.28918C5.49232 4.19991 5.39186 4.12831 5.28025 4.07866C5.16863 4.029 5.04814 4.00229 4.92597 4.00014C4.80379 3.99799 4.68243 4.02043 4.56913 4.06613C4.45583 4.11182 4.35291 4.17984 4.26651 4.26612C4.1801 4.35239 4.11199 4.45517 4.06622 4.5683C4.02046 4.68143 3.99799 4.80261 4.00014 4.92461C4.0023 5.0466 4.02904 5.16692 4.07877 5.27837C4.1285 5.38982 4.20021 5.49013 4.28961 5.57331L10.7257 12L4.28961 18.4267C4.20021 18.5099 4.1285 18.6102 4.07877 18.7216C4.02904 18.8331 4.0023 18.9534 4.00014 19.0754C3.99799 19.1974 4.02046 19.3186 4.06622 19.4317C4.11199 19.5448 4.1801 19.6476 4.26651 19.7339C4.35291 19.8202 4.45583 19.8882 4.56913 19.9339C4.68243 19.9796 4.80379 20.002 4.92597 19.9999C5.04814 19.9977 5.16863 19.971 5.28025 19.9213C5.39186 19.8717 5.49232 19.8001 5.57562 19.7108L12.0117 13.2841L18.4479 19.7108C18.6185 19.881 18.8498 19.9765 19.0909 19.9765C19.332 19.9765 19.5633 19.881 19.7339 19.7108C19.9043 19.5405 20 19.3095 20 19.0688C20 18.828 19.9043 18.5971 19.7339 18.4267L13.2978 12Z" fill="#F03C30"/>
+                </svg>
+                
+            </div>
+            <div class="person">
+                <div class="info">
+                    <img src="./assets/img/person.jpg" alt="user1">
+                    <p>example@hotmail.com</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M13.2978 12L19.7339 5.57331C19.9043 5.40295 20 5.17202 20 4.93124C20 4.69047 19.9043 4.45954 19.7339 4.28918C19.5633 4.11903 19.332 4.02346 19.0909 4.02346C18.8498 4.02346 18.6185 4.11903 18.4479 4.28918L12.0117 10.7159L5.57562 4.28918C5.49232 4.19991 5.39186 4.12831 5.28025 4.07866C5.16863 4.029 5.04814 4.00229 4.92597 4.00014C4.80379 3.99799 4.68243 4.02043 4.56913 4.06613C4.45583 4.11182 4.35291 4.17984 4.26651 4.26612C4.1801 4.35239 4.11199 4.45517 4.06622 4.5683C4.02046 4.68143 3.99799 4.80261 4.00014 4.92461C4.0023 5.0466 4.02904 5.16692 4.07877 5.27837C4.1285 5.38982 4.20021 5.49013 4.28961 5.57331L10.7257 12L4.28961 18.4267C4.20021 18.5099 4.1285 18.6102 4.07877 18.7216C4.02904 18.8331 4.0023 18.9534 4.00014 19.0754C3.99799 19.1974 4.02046 19.3186 4.06622 19.4317C4.11199 19.5448 4.1801 19.6476 4.26651 19.7339C4.35291 19.8202 4.45583 19.8882 4.56913 19.9339C4.68243 19.9796 4.80379 20.002 4.92597 19.9999C5.04814 19.9977 5.16863 19.971 5.28025 19.9213C5.39186 19.8717 5.49232 19.8001 5.57562 19.7108L12.0117 13.2841L18.4479 19.7108C18.6185 19.881 18.8498 19.9765 19.0909 19.9765C19.332 19.9765 19.5633 19.881 19.7339 19.7108C19.9043 19.5405 20 19.3095 20 19.0688C20 18.828 19.9043 18.5971 19.7339 18.4267L13.2978 12Z" fill="#F03C30"/>
+                </svg>
+                
+            </div>
+            <div class="person">
+                <div class="info">
+                    <img src="./assets/img/person.jpg" alt="user1">
+                    <p>example@hotmail.com</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M13.2978 12L19.7339 5.57331C19.9043 5.40295 20 5.17202 20 4.93124C20 4.69047 19.9043 4.45954 19.7339 4.28918C19.5633 4.11903 19.332 4.02346 19.0909 4.02346C18.8498 4.02346 18.6185 4.11903 18.4479 4.28918L12.0117 10.7159L5.57562 4.28918C5.49232 4.19991 5.39186 4.12831 5.28025 4.07866C5.16863 4.029 5.04814 4.00229 4.92597 4.00014C4.80379 3.99799 4.68243 4.02043 4.56913 4.06613C4.45583 4.11182 4.35291 4.17984 4.26651 4.26612C4.1801 4.35239 4.11199 4.45517 4.06622 4.5683C4.02046 4.68143 3.99799 4.80261 4.00014 4.92461C4.0023 5.0466 4.02904 5.16692 4.07877 5.27837C4.1285 5.38982 4.20021 5.49013 4.28961 5.57331L10.7257 12L4.28961 18.4267C4.20021 18.5099 4.1285 18.6102 4.07877 18.7216C4.02904 18.8331 4.0023 18.9534 4.00014 19.0754C3.99799 19.1974 4.02046 19.3186 4.06622 19.4317C4.11199 19.5448 4.1801 19.6476 4.26651 19.7339C4.35291 19.8202 4.45583 19.8882 4.56913 19.9339C4.68243 19.9796 4.80379 20.002 4.92597 19.9999C5.04814 19.9977 5.16863 19.971 5.28025 19.9213C5.39186 19.8717 5.49232 19.8001 5.57562 19.7108L12.0117 13.2841L18.4479 19.7108C18.6185 19.881 18.8498 19.9765 19.0909 19.9765C19.332 19.9765 19.5633 19.881 19.7339 19.7108C19.9043 19.5405 20 19.3095 20 19.0688C20 18.828 19.9043 18.5971 19.7339 18.4267L13.2978 12Z" fill="#F03C30"/>
+                </svg>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mobile navigatie -->
+    <div class="menu-overlay hidden" id="menu-overlay">
+        <!-- Alle dropdowns -->
+        <div class="dropdown-overlay">
+            <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-button" data-target="#submenu1" id="DropdownMenu1">
+                Kopen
+                <img src="./assets/svg/dropdown-arrow-down.svg" alt="">
+            </button>
+            <div role="menu" class="dropdown" id="submenu1" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item">
+                    <a href="#">Zoek een koopwoning</a>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#">Zoek een NVM-aankoopmakelaar</a>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#">Bereken je maandlasten</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dropdown-overlay">
+            <button type="button" aria-haspopup="true" aria-expanded="false" class="dropdown-button" data-target="#submenu2" title="Open dropdown">
+                Huren
+                <img src="./assets/svg/dropdown-arrow-down.svg" alt="">
+            </button>
+            <div class="dropdown" id="submenu2">
+                <div class="dropdown-item">
+                    <a href="#">Zoek een huurwoning</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-overlay">
+            <button type="button" class="dropdown-button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu3" data-target="#submenu3">
+                Verkopen <img src="./assets/svg/dropdown-arrow-down.svg" alt="">
+            </button>
+            <div class="dropdown" id="submenu3" role="menu">
+                <div class="dropdown-item" role="menuitem">
+                    <a href="#">Plaats je huis op Funda</a>
+                </div>
+                <div class="dropdown-item" role="menuitem">
+                    <a href="#">Zoek een NVM-aankoopmakelaar</a>
+                </div>
+                <div class="dropdown-item" role="menuitem">
+                    <a href="#">Alles wat je moet weten over Funda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- Top banner op de pagina -->
+        <div class="banner">
+            <a class="share-button" href="#" title="delen met vrienden">
+                <img src="./assets/svg/share-icon.svg" alt="delen met vrienden">
+            </a>
+            <div class="banner-text">
+                <h2>Winkelstraat 65B</h2>
+                <p>€ 500.000 k.k.</p>
+            </div>
+        </div>
+        <!-- Breadcrumb (navigatie van de homepage) -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-list">
+                <a href="#">Home</a>
+                <span>></span>
+                <a href="./groups.html">Bewaarde huizen</a>
+                <span>></span>
+                <a href="#">Jelte's Lijst</a>
+            </div>
+            
+            <a href="#" class="settings-button" title="Settings">
+                <img src="./assets/svg/settings.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Filteren en delen opties -->
+        <div class="sort-buttons">
+            <select name="filteren" id="filer-select" class="filteren">
+                <option disabled selected value="">Filteren</option>
+                <option value="sorteer-mijn-datum_Descending">Bewaardatum ↑</option>
+                <option value="sorteer-mijn-datum_Ascending">Bewaardatum ↓</option>
+                <option value="sorteer-mijn-score_Descending">Objectscore</option>
+                <option value="sorteer-datum_Descending">Datum</option>
+                <option value="sorteer-plaats_Ascending">Plaats</option>
+                <option value="sorteer-postcode_Ascending">Postcode</option>
+                <option value="sorteer-adres_Ascending">Adres</option>
+                <option value="sorteer-prijs_Ascending">Vraagprijs</option>
+                <option value="sorteer-huurprijspermaand_Ascending">Huurprijs</option>
+                <option value="sorteer-woonopp_Ascending">Gebruiksopp.</option>
+                <option value="sorteer-perceelopp_Ascending">Perceelopp.</option>
+                <option value="sorteer-kamers_Ascending">Kamers</option>
+            </select>
+
+            <div class="sharedwith">
+                <div class="list">
+                    <a href="#"><img src="./assets/img/person.jpg" alt="addedby"></a>
+                    <a href="#"><img src="./assets/img/person.jpg" alt="addedby"></a>
+                </div>
+                <button class="btn share-list">Lijst delen
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.8609 8.40489C14.0237 8.26539 14.105 8.19564 14.1348 8.11264C14.161 8.03979 14.161 7.96011 14.1348 7.88726C14.105 7.80426 14.0237 7.73451 13.8609 7.59501L8.21375 2.7546C7.9336 2.51447 7.79353 2.3944 7.67493 2.39146C7.57186 2.3889 7.47341 2.43418 7.40828 2.5141C7.33333 2.60606 7.33333 2.79055 7.33333 3.15953V6.02304C5.91021 6.27201 4.60773 6.99312 3.63981 8.07586C2.58455 9.25629 2.00082 10.7839 2 12.3673V12.7753C2.69956 11.9325 3.573 11.251 4.56051 10.7772C5.43113 10.3596 6.37228 10.1122 7.33333 10.047V12.8404C7.33333 13.2093 7.33333 13.3938 7.40828 13.4858C7.47341 13.5657 7.57186 13.611 7.67493 13.6084C7.79353 13.6055 7.9336 13.4854 8.21375 13.2453L13.8609 8.40489Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- load gridlist-houses.html from assets/objects via js -->
+
+        <div id="_load-gridlist-houses"></div>
+        <script>
+            $(function(){
+                $("#_load-gridlist-houses").load("./assets/objects/gridlist-houses.html");
+            });
+        </script>
+    </main>
+
+    <div id="_load-footer"></div>
+    <script>
+        $(function(){
+            $("#_load-footer").load("./assets/objects/default-footer.html");
+        });
+    </script>
+    
+</body>
+  <script src="./js/main.js"></script>
+  <script src="./js/dropdown.js"></script>
+</html>

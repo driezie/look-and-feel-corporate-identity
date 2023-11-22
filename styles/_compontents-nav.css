@@ -1,0 +1,63 @@
+header {
+    --header-space-between: 0;
+    --header-item-padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.header-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 64.5rem;
+}
+
+header .menu {
+    /* display: flex; */
+    list-style: none;
+    gap: var(--header-space-between);
+}
+
+header .menu .list-item {
+    display: none;
+}
+
+header nav span {
+    display: none;
+    font-size: var(--font-size-default);
+    padding-left: 10px;
+    font-family: var(--font-family-secondary);
+}
+
+header .menu-button {
+    padding: 1rem;
+}
+
+header .menu-button svg {
+    font-size: var(--font-size-large);
+}
+
+header .logo-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .logo {
+    max-height: 30px;
+    padding: 0 10px;
+}
+
+header .list-item a, 
+header button, 
+nav a {
+    color: var(--tertiary-text-color);
+    padding: var(--header-item-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-secondary);
+}
+
+header .list-item a:hover, nav a:hover  {
+    background-color: var(--bg-button-hover)
+}

@@ -1,0 +1,32 @@
+/* defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--font-family-default);
+    background: var(--bg-background);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
