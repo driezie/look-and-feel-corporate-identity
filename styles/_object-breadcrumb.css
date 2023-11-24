@@ -45,7 +45,6 @@
 .sort-buttons .filteren {
     position: relative;
     /* color: #333; */
-    padding: .8rem 0.5rem;
     border: 1px solid #ccc;
     box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.1) inset;
     min-width: 120px;

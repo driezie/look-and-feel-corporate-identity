@@ -1,6 +1,6 @@
 .btn {
     background-color: var(--bg-button);
-    border-radius: var(--border-radius-default);
+    border-radius: var(--default-border-radius);
     color: var(--tertiary-text-color);
     padding: .8rem 0.5rem;
     text-decoration: none;
