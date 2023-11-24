@@ -28,6 +28,8 @@
 
 
     <script src="./assets/objects/default-footer.js"></script>
+    <script src="./assets/objects/gridlist-houses.js"></script>
+
 </head>
 <body>
     <header>
@@ -90,7 +92,7 @@
             <p>Gedeeld met</p>
             <div class="person">
                 <div class="info">
-                    <img src="./assets/img/person.jpg" alt="user1">
+                    <img src="./assets/img/person.png" alt="user1">
                     <p>example@hotmail.com</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -100,7 +102,7 @@
             </div>
             <div class="person">
                 <div class="info">
-                    <img src="./assets/img/person.jpg" alt="user1">
+                    <img src="./assets/img/person.png" alt="user1">
                     <p>example@hotmail.com</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -110,7 +112,7 @@
             </div>
             <div class="person">
                 <div class="info">
-                    <img src="./assets/img/person.jpg" alt="user1">
+                    <img src="./assets/img/person.png" alt="user1">
                     <p>example@hotmail.com</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -218,8 +220,8 @@
 
             <div class="sharedwith">
                 <div class="list">
-                    <a href="#"><img src="./assets/img/person.jpg" alt="addedby"></a>
-                    <a href="#"><img src="./assets/img/person.jpg" alt="addedby"></a>
+                    <a href="#"><img src="./assets/img/person.png" alt="addedby"></a>
+                    <a href="#"><img src="./assets/img/person.png" alt="addedby"></a>
                 </div>
                 <button class="btn share-list">Lijst delen
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -229,22 +231,8 @@
             </div>
         </div>
 
-        <!-- load gridlist-houses.html from assets/objects via js -->
-
-        <div id="_load-gridlist-houses"></div>
-        <script>
-            $(function(){
-                $("#_load-gridlist-houses").load("./assets/objects/gridlist-houses.html");
-            });
-        </script>
+        <gridlist-houses></gridlist-houses>
     </main>
-
-    <div id="_load-footer"></div>
-    <script>
-        $(function(){
-            $("#_load-footer").load("./assets/objects/default-footer.html");
-        });
-    </script>
 
     <default-footer></default-footer>
     
