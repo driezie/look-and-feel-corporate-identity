@@ -1,1 +1,0 @@
-console.log('Funda website (Halloween edition)');
