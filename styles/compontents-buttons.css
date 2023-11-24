@@ -1,5 +1,5 @@
 .btn {
-    background-color: var(--bg-button);
+    background-color: transparent;
     border-radius: var(--default-border-radius);
     color: var(--tertiary-text-color);
     padding: .8rem 0.5rem;
@@ -13,11 +13,35 @@
     min-width: 127px;
 }
 
-.btn:hover  {
-    background-color: var(--bg-button-hover);
-}
-
 .btn svg {
     margin-left: 5px;
 }
 
+
+/* Colors of the buttons */
+
+.btn.btn-primary  {
+    background-color: var(--bg-button);
+}
+
+.btn.btn-primary:hover  {
+    background-color: var(--bg-button-hover);
+}
+
+.btn.btn-secondary  {
+    color: var(--primary-text-color);
+    background-color: var(--bg-button-secondary);
+}
+
+.btn.btn-secondary:hover  {
+    background-color: var(--bg-button-secondary-hover);
+}
+
+select.btn
+/* remove the arrow */
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}

@@ -5,51 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funda</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/fonts.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <!-- Components -->
+     <link rel="stylesheet" href="./styles/compontents-root.css">
+     <link rel="stylesheet" href="./styles/compontents-globals.css">
+     <link rel="stylesheet" href="./styles/compontents-fonts.css">
+     <link rel="stylesheet" href="./styles/compontents-main.css">
+     <link rel="stylesheet" href="./styles/compontents-buttons.css">
+     <link rel="stylesheet" href="./styles/compontents-nav.css">
+     <link rel="stylesheet" href="./styles/compontents-footer.css">
+     <link rel="stylesheet" href="./styles/compontents-media.css">
+     <link rel="stylesheet" href="./styles/compontents-styles.css">
+ 
+     <!-- Objects -->
+     <link rel="stylesheet" href="./styles/object-header.css">
+     <link rel="stylesheet" href="./styles/object-breadcrumb.css">
+     <link rel="stylesheet" href="./styles/object-grid.css">
+ 
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+ 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+ 
+     <script src="./assets/objects/default-footer.js"></script>
+     <script src="./assets/objects/gridlist-houses.js"></script>
+     <script src="./assets/objects/default-navbar.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <ul class="menu flex">
-                <li class="menu-item">
-                    <button class="menu-button" onclick="Togglemenu()">
-                            <img src="./assets/svg/menu.svg" alt="Open menu" class="icon">
-                    </button>
-                </li>
-                <li class="logo-item">
-                    <a href="">
-                        <img src="./assets/logo.png" alt="funda logo" class="logo">
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Kopen</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Huren</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Verkopen</a>
-                </li>
-            </ul>
-            <nav>
-                <a href="#" title="Bewaarde huizen">
-                    <img src="./assets/svg/savedhouses.svg" alt="Saved houses icon" class="icon">
-                    <span>
-                        Bewaarde huizen
-                    </span>
-                </a>
-                <a href="#" title="My account">
-                    <img src="./assets/svg/account.svg" alt="Account icon" class="icon">
-                    <span>
-                        Jelte
-                    </span>
-                </a>
-            </nav>
-        </div>
-    </header>
+    <default-navbar></default-navbar>
 
     <!-- Mobile Share -->
     <div class="share-overlay" id="share-overlay">
@@ -177,17 +159,17 @@
         <div class="content">
             <div class="grid-content">
                 <a class="item" href="./index.html">
-                    <img class="banner-img" src="./assets/house1.jpg" alt="Bloemfonteinstraat 8 F">
+                    <img class="banner-img" src="./assets/img/house1.jpg" alt="Bloemfonteinstraat 8 F">
                     <div class="img-showcase">
-                        <img class="banner-img" src="./assets/house1.jpg" alt="Bloemfonteinstraat 8 F">
-                        <img class="banner-img" src="./assets/house1.jpg" alt="Bloemfonteinstraat 8 F">
-                        <img class="banner-img" src="./assets/house1.jpg" alt="Bloemfonteinstraat 8 F">
+                        <img class="banner-img" src="./assets/img/house1.jpg" alt="Bloemfonteinstraat 8 F">
+                        <img class="banner-img" src="./assets/img/house1.jpg" alt="Bloemfonteinstraat 8 F">
+                        <img class="banner-img" src="./assets/img/house1.jpg" alt="Bloemfonteinstraat 8 F">
                     </div>
                     <div class="item-content">
                         <div class="addedby">
-                            <img src="./assets/person.jpg" alt="naam">
-                            <img src="./assets/person.jpg" alt="naam">
-                            <img src="./assets/person.jpg" alt="naam">
+                            <img src="./assets/img/person.png" alt="naam">
+                            <img src="./assets/img/person.png" alt="naam">
+                            <img src="./assets/img/person.png" alt="naam">
                         </div>
                         <h2>Groep JelteF</h2>
                         <p class="shared-with">Gedeeld met: Persoon1, Persoon2, Persoon 3 en Persoon4</p>
@@ -197,59 +179,14 @@
 
             </div>
             <div class="pager">
-                <p>Pagina 1 van 1</p>
-                <div class="pager-pages">
+                <p>Pagina 1 van 3</p>
+                <div class="pager-pages flex-center-center">
                     <a href="#">1</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-item">
-                    <strong>Diensten</strong>
-                    <ul>
-                        <li><a href="#">Plaats je huis op Funda</a></li>
-                        <li><a href="#">Zoek een NVM-makelaar</a></li>
-                        <li><a href="#">Bladeren door aanbod</a></li>
-                        <li><a href="#">Wat is mijn woning waard?</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <strong>Informatie</strong>
-                    <ul>
-                        <li><a href="#">Vraag & antwoord</a></li>
-                        <li><a href="#">Funda Index</a></li>
-                        <li><a href="#">Alles over een huis kopen</a></li>
-                        <li><a href="#">Verkoop je huis</a></li>
-                        <li><a href="#">Hoe zoek ik op funda?</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <strong>Makelaars</strong>
-                    <ul>
-                        <li><a href="#">Funda desk</a></li>
-                        <li><a href="#">Tips, trends & nieuws</a></li>
-                        <li><a href="#">Leads</a></li>
-                        <li><a href="#">Producten</a></li>
-                        <li><a href="#">Events & meetups</a></li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <strong>Over ons</strong>
-                    <ul>
-                        <li><a href="#">Over Funda</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Werken bij Funda</a></li>
-                        <li><a href="#">Adviteren</a></li>
-                        <li><a href="#">Redactioneel beleid</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </footer>
+    <default-footer></default-footer>
 </body>
   <script src="./js/main.js"></script>
   <script src="./js/dropdown.js"></script>

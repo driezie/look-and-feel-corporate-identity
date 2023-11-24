@@ -44,6 +44,11 @@
     /* Default button */
     --bg-button: #F7A100;
     --bg-button-hover: #de9000;
+
+    --bg-button-secondary: #e0e0e0;
+    --bg-button-secondary-hover: #999;
+
+
     --bg-button-disabled: #e0e0e0;
     --bg-button-disabled-hover: #e0e0e0;
     --bg-button-error: #f44336;

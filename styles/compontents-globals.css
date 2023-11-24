@@ -21,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-button {
+button,select {
     border: none;
     background: none;
     cursor: pointer;
