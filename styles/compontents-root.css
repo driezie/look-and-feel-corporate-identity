@@ -42,7 +42,7 @@
     --bg-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,242,247,1) 100%);
 
     /* Default button */
-    --bg-button: #F7A100;
+    --bg-button: var(--primary-color);
     --bg-button-hover: #de9000;
 
     --bg-button-secondary: #e0e0e0;

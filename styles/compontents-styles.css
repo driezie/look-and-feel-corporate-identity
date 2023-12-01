@@ -14,7 +14,7 @@
 }
 
 .sharedwith .list {
-    display: none;
+    display: flex;
     gap: 10px;
 }
 

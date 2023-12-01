@@ -3,147 +3,173 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
     transition: all 0.3s ease-in-out;
+
+    & .item {
+        border-bottom: 1px solid #ccc;
+
+        .item-content {
+            position: relative;
+            padding: 0 10px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        & .item-content .addedby {
+            position: absolute;
+            right: 10px;
+            top: 13px;
+
+            & img {
+                width: 40px;
+                max-height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        & img.banner-img {
+            width: 100%;
+            min-height: 220px;
+            object-fit: cover;
+            max-height: 195px;
+            object-position: center;
+            padding: 10px 10px 0 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        & .item-content {
+            min-height: 100px;
+            & h2 {
+                color: var(--secondary-color);
+                font-size: 16px;
+                font-family: var(--font-family-secondary);
+                font-weight: 600;
+                line-height: 24px;
+            }
+
+            & p.postal-address {
+                color: var(--secondary-text-color);
+                font-size: 15px;
+                font-family: var(--font-family-secondary);
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 12px;
+            }
+
+            & p.price {
+                color: var(--primary-text-color);
+                font-size: 15px;
+                font-family: var(--font-family-secondary);
+                font-weight: 600;
+                line-height: 24px;
+            }
+
+            & p.date {
+                position: absolute;
+                right: 14px;
+                bottom: 14px;
+                color: var(--secondary-text-color);
+                font-size: 15px;
+                font-family: var(--font-family-secondary);
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            & .makelaar {
+                display: block; 
+                position: absolute;
+                right: 14px;
+                bottom: 45px;
+                max-height: 30px;
+                width: auto;
+            }
+        }
+
+        & ul.kenmerken {
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            color: var(--quaternary-color);
+            margin-bottom: 12px;
+
+            & li {
+                font-size: 15px;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+
+    & .img-showcase {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 10px;
+        gap: 5px;
+
+        & img {
+            width: 100%;
+            min-height: 130px !important;
+            max-height: 130px !important;
+            padding: 0 !important;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
 }
 
-
-.item .item-content {
-    position: relative;
-    padding: 0 10px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    transition: all 0.3s ease-in-out;
-}
-
-.item .item-content .addedby {
-    position: absolute;
-    right: 10px;
-    top: 13px;
-}
-
-.item .item-content .addedby img {
-    width: 40px;
-    max-height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.item img.banner-img {
-    width: 100%;
-    min-height: 220px;
-    object-fit: cover;
-    max-height: 195px;
-    object-position: center;
-    padding: 10px 10px 0 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.item .item-content h2 {
-    color: #0071B3;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.item .item-content p.postal-adress {
-    color: #999;
-    font-size: 15px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 12px;
-}
-
-.item .item-content p.price {
-    color: #333;
-    font-size: 15px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.item .item-content p.date {
-    position: absolute;
-    right: 14px;
-    bottom: 14px;
-    color: #999;
-    font-size: 15px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.item .item-content .makelaar {
-    display: block; 
-    position: absolute;
-    right: 14px;
-    bottom: 45px;
-    max-height: 30px;
-    width: auto;
-}
-
-.item {
-    border-bottom: 1px solid #ccc;
-}
-
-.item ul.kenmerken {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    color: #999;
-    margin-bottom: 12px;
-}
-
-.item ul.kenmerken li {
-    font-size: 15px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-/* Pager */
-
-.pager {
+& .pager {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
-}
 
-.pager p {
-    font-size: var(--font-size-small);
-    text-align: center;
-    color: var(--secondary-text-color);
-    padding-bottom: 1.5rem;
-}
+    & p {
+        font-size: var(--font-size-small);
+        text-align: center;
+        color: var(--secondary-text-color);
+        padding-bottom: 1.5rem;
+    }
 
-.pager .pager-pages {
+    & .pager-pages {
+        gap: var(--gap-default);
 
-    gap: var(--gap-default);
-}
+        & a {
+            background: var(--bg-button);
+            border-radius: var(--border-radius-default);
+            color: var(--tertiary-text-color);
+            padding: 0.5rem .5rem;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    
+        & a:hover {
+            background: var(--bg-button-hover);
+        }
+    }
 
-.pager a {
-    background: var(--bg-button);
-    border-radius: var(--border-radius-default);
-    color: var(--tertiary-text-color);
-    padding: 0.5rem .5rem;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.pager a:hover {
-    background: var(--bg-button-hover);
+    
 }
 
 @media (min-width: 540px){
     .default-grid {
         grid-template-columns: repeat(2, 1fr);
+
+        & .item img.banner-img {
+            min-height: 220px;
+            object-fit: cover;
+            object-position: center;
+            padding-left: 10px;
+        }
+    }
+
+    & .item-content {
+        min-height: 140px;
     }
 }
+

@@ -31,6 +31,33 @@
     <script src="./assets/objects/gridlist-houses.js"></script>
     <script src="./assets/objects/default-navbar.js"></script>
 
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Funda">
+    <meta name="description" content="Hier is een lijst van alle huizen die u heeft opgeslagen voor alle mensen in deze groep.">
+    <meta name="keywords" content="Funda">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Dutch">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="Jelte Herder">
+    <meta name="reply-to" content="jelte">
+    <meta name="owner" content="Jelte Herder">
+    <meta name="url" content="https://jelteherder.nl">
+    <meta name="identifier-URL" content="https://jelteherder.nl">
+    <meta name="pagename" content="Funda">
+    <meta name="coverage" content="Worldwide">
+
+    <!-- image -->
+    <meta property="og:image" content="./assets/img/banner.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+
+    <!-- Open Graph / Facebook -->
+
+
+
 </head>
 <body>
     <default-navbar></default-navbar>
@@ -138,14 +165,16 @@
     </div>
     <main>
         <!-- Top banner op de pagina -->
-        <div class="banner">
+        <div class="banner" id="map-canvas">
+
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
             <a class="share-button" href="#" title="delen met vrienden">
                 <img src="./assets/svg/share-icon.svg" alt="delen met vrienden">
             </a>
-            <div class="banner-text">
+            <!-- <div class="banner-text">
                 <h2>Winkelstraat 65B</h2>
                 <p>€ 500.000 k.k.</p>
-            </div>
+            </div> -->
         </div>
         <!-- Breadcrumb (navigatie van de homepage) -->
         <div class="breadcrumb">
@@ -154,7 +183,7 @@
                 <span>></span>
                 <a href="./groups.html">Bewaarde huizen</a>
                 <span>></span>
-                <a href="#">Jelte's Lijst</a>
+                <a href="#">Groep 1</a>
             </div>
             
             <a href="#" class="settings-button" title="Settings">
@@ -201,4 +230,5 @@
 </body>
   <script src="./js/main.js"></script>
   <script src="./js/dropdown.js"></script>
+  <script src="./js/map.js"></script>
 </html>

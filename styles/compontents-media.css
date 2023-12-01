@@ -1,16 +1,6 @@
 
 @media (min-width: 540px) {
-    .grid-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px; 
-    }
 
-    .item img.banner-img {
-        min-height: 220px;
-        object-fit: cover;
-        object-position: center;
-        padding-left: 10px;
-    }
 
     .item .item-content {
         width: 100%;

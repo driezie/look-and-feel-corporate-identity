@@ -10,7 +10,7 @@ class gridlistHouses extends HTMLElement {
                         <img src="./assets/img/person.png" alt="naam">
                     </div>
                     <h2>Bloemfonteinstraat 8 F</h2>
-                    <p class="postal-adress">9693 EJ Bad Nieuweschans</p>
+                    <p class="postal-address">9693 EJ Bad Nieuweschans</p>
             
                     <ul class="kenmerken">
                         <li><span title="Gebruiksoppervlakte wonen">78 m²</span> /</li>
@@ -30,7 +30,7 @@ class gridlistHouses extends HTMLElement {
                         <img src="./assets/img/person.png" alt="naam">
                     </div>
                     <h2>Winkelstraat 65B</h2>
-                    <p class="postal-adress">6716 AB Gouda</p>
+                    <p class="postal-address">6716 AB Gouda</p>
                     <ul class="kenmerken">
                         <li><span title="Gebruiksoppervlakte wonen">78 m²</span> /</li>
                         <li><span title="Perceeloppervlakte">141 m²</span> ·</li>
@@ -49,7 +49,7 @@ class gridlistHouses extends HTMLElement {
                         <img src="./assets/img/person.png" alt="naam">
                     </div>
                     <h2>Diepenbrockstraat 2 a</h2>
-                    <p class="postal-adress">7132 AM Lichtenvoorde 't Zand</p>
+                    <p class="postal-address">7132 AM Lichtenvoorde 't Zand</p>
                     <ul class="kenmerken">
                         <li><span title="Gebruiksoppervlakte wonen">78 m²</span> /</li>
                         <li><span title="Perceeloppervlakte">141 m²</span> ·</li>
